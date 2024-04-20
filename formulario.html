@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário com Auto Preenchimento ViaCEP</title>
+    <style>
+        html { background-color: black; color: white;}
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        form { margin-bottom: 20px; }
+        label, input, button { margin-right: 10px; margin-bottom: 5px; display: block; }
+    </style>
+</head>
+<body>
+    <h1>Formulário com Preenchimento Automático</h1>
+    <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="contato">Contato:</label>
+        <input type="text" id="contato" name="contato" required>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required onblur="buscaCEP(this.value)">
+
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" name="logradouro" readonly>
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" readonly>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" readonly>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" readonly>
+    </form>
+
+    <script src="viacepform.js"></script>
+</body>
+</html>

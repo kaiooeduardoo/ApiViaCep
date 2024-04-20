@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta CEP com ViaCEP</title>
+    <style>
+        html { background-color: black; color: white;}
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        form { margin-bottom: 20px; }
+        label, button { margin-right: 10px; }
+    </style>
+    
+</head>
+<body>
+    <h1>Consulta de CEP</h1>
+    <form id="cepForm">
+        <label for="cep">Digite o CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+        <button type="submit">Buscar</button>
+    </form>
+    <div id="endereco">
+        <!-- Os resultados serão exibidos aqui -->
+    </div>
+
+    <script src="viacep.js"></script>
+</body>
+</html>
